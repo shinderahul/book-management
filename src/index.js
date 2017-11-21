@@ -6,14 +6,18 @@ import { data } from './data'
 
 import App from './App';
 
+const Book = ({book}) => (
+	<li>
+		{book.title} -- Rs.{book.price}
+	</li>
+);
+
 // Stateless Function
 const BookList = (props) => (
 	<ul>
 		{props.books.map(book => {
 			return (
-				<li key={book.id}>
-					{book.title} -- Rs.{book.price}
-				</li>
+					<Book key={book.id} book={book} />
 				);
 		})}
 	</ul>
