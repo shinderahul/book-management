@@ -1,0 +1,53 @@
+{
+  "data":{
+    "authors":{
+      "2":{
+        "firstName":"Amish",
+        "lastName":"Tripathi"
+      },
+      "4":{
+        "firstName":"Chetan",
+        "lastName":"Bhagat"
+      },
+      "15":{
+        "firstName":"Preeti",
+        "lastName":"Shenoy"
+      }
+    },
+    "books":[
+      {
+        "id": 1,
+        "title":"The Immortals of Meluha",
+        "price":2434,
+        "authorId":4
+      },
+      {
+        "id": 2,
+        "title":"The Secret Of The Nagas ",
+        "price":2399,
+        "authorId":15
+      },
+      {
+        "id": 3,
+        "title":"The Oath of the Vayuputras",
+        "price":2250,
+        "authorId":22
+      },
+      {
+        "id": 4,
+        "title":"One Indian Girl",
+        "price":3259,
+        "authorIds":[
+          44,
+          67
+        ]
+      },
+      {
+        "id": 5,
+        "title":"Life is What You Make it",
+        "price":3224,
+        "authorId":2
+      }
+    ]
+  }
+}
