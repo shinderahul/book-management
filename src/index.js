@@ -12,16 +12,24 @@ const Book = ({book}) => (
 	</li>
 );
 
-// Stateless Function
-const BookList = (props) => (
-	<ul>
-		{props.books.map(book => {
-			return (
-					<Book key={book.id} book={book} />
-				);
-		})}
-	</ul>
-);
+// Stateful Function
+class BookList extends React.Component{
+	constructor(props){
+		super(props);
+		this.state = { books: this.props.books }
+	}
+	render() {
+		return (
+			<ul>
+				{this.state.books.map(book => {
+					return (
+							<Book key={book.id} book={book} />
+						);
+				})}
+			</ul>
+		);
+	}
+}
 
 ReactDOM.render(
 	<BookList books={data.books} />,
