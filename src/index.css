@@ -3,3 +3,20 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.book{
+  margin-bottom: 10px;
+}
+
+.title{
+  color: #111;
+}
+
+.price{
+  color: #777;
+}
+
+.delete{
+  color: red;
+  text-decoration: none;
+}
