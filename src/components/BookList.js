@@ -6,12 +6,24 @@ class BookList extends React.Component{
 		super(props);
 		this.state = { books: this.props.books }
 	}
+
+	deleteBook = (id) => {
+		const currentBooks = this.state.books;
+		const books = currentBooks.filter(book => book.id !== id)
+
+		this.setState({ books });
+	}
+
 	render() {
 		return (
 			<ul>
 				{this.state.books.map(book => {
 					return (
-							<Book key={book.id} book={book} />
+							<Book
+								key={book.id}
+								book={book}
+								handleDelete={this.deleteBook}
+							/>
 						);
 				})}
 			</ul>
