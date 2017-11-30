@@ -1,6 +1,8 @@
 import React from 'react';
 import Book from './Book';
 import Form from './Form';
+import {default as UUID} from "node-uuid";
+
 
 class BookList extends React.Component{
 	constructor(props){
@@ -18,7 +20,7 @@ class BookList extends React.Component{
 	addBook = (title, price) => {
 		this.setState({
 			books: this.state.books.concat({
-				//id: Date.Now(),
+				id: UUID.v4(),
 				title,
 				price
 			})

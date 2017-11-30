@@ -7,7 +7,7 @@ const Book = ({book, handleDelete}) => {
 	}
 
 	const formatPrice = priceInCents => {
-		if(priceInCents == undefined){
+		if(priceInCents === undefined){
 			return ''
 		}
 			return `$ ${(priceInCents/100).toFixed(2)}`
