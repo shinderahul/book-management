@@ -12,6 +12,18 @@
       "15":{
         "firstName":"Preeti",
         "lastName":"Shenoy"
+      },
+      "8":{
+        "firstName":"Marc",
+        "lastName":"Collingwood"
+      },
+      "32":{
+        "firstName":"Akshat",
+        "lastName":"Agrawal"
+      },
+      "35":{
+        "firstName":"Memory",
+        "lastName":"Man"
       }
     },
     "books":[
@@ -19,34 +31,41 @@
         "id": 1,
         "title":"The Immortals of Meluha",
         "price":2434,
-        "authorId":4
+        "authorId":2
       },
       {
         "id": 2,
         "title":"The Secret Of The Nagas ",
         "price":2399,
-        "authorId":15
+        "authorId":2
       },
       {
         "id": 3,
         "title":"The Oath of the Vayuputras",
         "price":2250,
-        "authorId":22
+        "authorId":2
       },
       {
         "id": 4,
         "title":"One Indian Girl",
         "price":3259,
-        "authorIds":[
-          44,
-          67
-        ]
+        "authorId": 4
       },
       {
         "id": 5,
+        "title":"Bulletproof Memory: The Ultimate Hacks To Unlock Hidden Powers of Mind and Memory ",
+        "price":3259,
+        "authorIds": [
+          8,
+          32,
+          35
+        ]
+      },
+      {
+        "id": 6,
         "title":"Life is What You Make it",
         "price":3224,
-        "authorId":2
+        "authorId": 15
       }
     ]
   }
