@@ -5,13 +5,21 @@ const Book = ({book, handleDelete}) => {
 		e.preventDefault();
 		handleDelete(book.id)
 	}
+
+	const formatPrice = priceInCents => {
+		if(priceInCents == undefined){
+			return ''
+		}
+			return `$ ${(priceInCents/100).toFixed(2)}`
+		}
+
 	return (
 		<li className="book">
 			<div className="title">
 				{book.title}
 			</div>
 			<div className="price">
-			  	Rs.{book.price}
+			  	{formatPrice(book.price)}
 			</div>
 			<a href="#" className="delete" onClick={handleClick}>
 				delete
