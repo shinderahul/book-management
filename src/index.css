@@ -20,3 +20,8 @@ body {
   color: red;
   text-decoration: none;
 }
+
+.Author{
+  font-style: italic;
+  font-size: 15px;
+}

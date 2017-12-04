@@ -48,7 +48,6 @@ class BookList extends React.Component{
 							<Book
 								key={book.id}
 								book={book}
-								author={this.state.authors[book.authorId]}
 								handleDelete={this.deleteBook}
 							/>
 						);
