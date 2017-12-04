@@ -19,7 +19,7 @@ const Book = ({book, author, handleDelete}) => {
 			<div className="title">
 				{book.title}
 			</div>
-			{book.authors.map(author => <Author {...author} />)}
+			{book.authors.map(author => <Author key={author.id} {...author} />)}
 			<div className="price">
 			  	{formatPrice(book.price)}
 			</div>

@@ -7,7 +7,7 @@ import {default as UUID} from "node-uuid";
 class BookList extends React.Component{
 	constructor(props){
 		super(props);
-		this.state = { books: [], authors: {} }
+		this.state = { books: []}
 	}
 
 	componentDidMount() {
