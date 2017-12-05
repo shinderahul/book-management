@@ -3,41 +3,38 @@ import Book from './Book';
 import Form from './Form';
 import {default as UUID} from "node-uuid";
 
+import configureStore from '../store';
 
 class BookList extends React.Component{
 	constructor(props){
 		super(props);
-		this.state = { books: []}
+		this.store = configureStore();
+		this.state = this.store.getState();
 	}
 
 	componentDidMount() {
-		fetch("http://localhost:8000/api/books")
-			.then(response => response.json())
-			.then(books => {
-				this.setState({ books })
-			});
-		fetch("http://localhost:8000/api/authors")
-			.then(response => response.json())
-			.then(authors => {
-				this.setState({ authors })
-			});
+		// fetch("http://localhost:8000/api/books")
+		// 	.then(response => response.json())
+		// 	.then(books => {
+		// 		this.setState({ books })
+		// 	});
 	}
 
 	deleteBook = (id) => {
-		const currentBooks = this.state.books;
-		const books = currentBooks.filter(book => book.id !== id)
-
-		this.setState({ books });
+		// const currentBooks = this.state.books;
+		// const books = currentBooks.filter(book => book.id !== id)
+    //
+		// this.setState({ books });
 	}
 
 	addBook = (title, price) => {
-		this.setState({
-			books: this.state.books.concat({
-				id: UUID.v4(),
-				title,
-				price
-			})
-		});
+		// this.setState({
+		// 	books: this.state.books.concat({
+		// 		id: UUID.v4(),
+		// 		title,
+		// 		price
+		// 	})
+		// });
 	}
 
 	render() {
